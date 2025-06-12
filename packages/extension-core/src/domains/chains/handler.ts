@@ -70,6 +70,7 @@ export class ChainsHandler extends ExtensionHandler {
         tokens: existingChain?.tokens ?? [{ id: newToken.id }],
         account: chain.accountFormat,
         subscanUrl: chain.subscanUrl ?? null,
+        blockExplorerUrls: existingChain?.blockExplorerUrls ?? null,
         chainspecQrUrl: existingChain?.chainspecQrUrl ?? null,
         latestMetadataQrUrl: existingChain?.latestMetadataQrUrl ?? null,
         isUnknownFeeToken: existingChain?.isUnknownFeeToken ?? false,
